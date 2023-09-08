@@ -1,0 +1,71 @@
+.animation1{
+    background-color:aqua;
+    height:300px;
+    padding:20px;
+    border-radius:5px;
+    margin:30px;
+    /*animation: bePractical;
+    animation-duration:10s;
+    animation-iteration-count: infinite;*/
+    animation: bePractical 10s infinite;
+    
+}
+.animation1>h1, .animation2>h1, .animation3>h1{
+    text-align:center;
+    font-size:40px;
+    color:white;
+    text-shadow:3px 3px 3px #000;
+}
+@keyframes bePractical{
+    from{background:aqua;}
+    to{background:#2cf216;}
+}
+.animation2{
+    background:url(https://images.pexels.com/photos/10528234/pexels-photo-10528234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)no-repeat center;
+    background-size:100%;
+    height:500px;
+    margin:30px;
+    border-radius:10px;
+    padding:30px;
+    animation:mani 10s infinite;
+}
+@keyframes mani{
+    from{background:url(https://images.pexels.com/photos/10528234/pexels-photo-10528234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)no-repeat top;}
+    to{background:url(https://images.pexels.com/photos/10528234/pexels-photo-10528234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)no-repeat bottom;}
+}
+.animation3{
+    background:#fc466b;
+    padding:20px;
+    border-radius:5px;
+    margin:30px;
+    position:absolute;
+    animation:cssAnimation1 10s infinite;
+    /*animation-play-state:running;*/
+}
+@keyframes cssAnimation1{
+    0%{
+        background:#b3beee;
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background:cadetblue;
+        top:0px;
+        left:600px;
+    }
+    50%{
+        background:#9546fc;
+        top:400px;
+        left:600px;
+    }
+    75%{
+        background:teal;
+        top:400px;
+        left:0px;
+    }
+    100%{
+        background:#fc466b;
+        top:0px;
+        left:0px;
+    }
+}
